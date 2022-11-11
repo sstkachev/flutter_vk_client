@@ -60,10 +60,10 @@ class AuthWebView extends StatelessWidget {
       javascriptMode: JavascriptMode.unrestricted,
       gestureNavigationEnabled: true,
       onPageStarted: (value) {
-        log('он пейдж стартед');
+        log('он пейдж  стартед');
       },
       onPageFinished: (value) {
-        log('он пейдж финишед');
+        log('он пейдж  финишед');
         locator.get<AuthCubit>().onAuthPageFinished(value);
       },
     );
